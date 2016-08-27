@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configurations>
+     <!--Configuration template for creating a database.-->
+     <Configuration id="1">
+          <!--The type of the database connection. Valid values include: "MySql", "SqlServer", "sqlite" or "Oracle".  NOTE - Currently only MySql is supported.-->
+          <DatabaseType>MySql</DatabaseType>
+          <!--The database server domain or ip address. For example, "127.0.0.1" or "localhost".-->
+          <Server>127.0.0.1</Server>
+          <!--The database server port number.  Note - for MySql, 3306 is the default (suggested).-->
+          <Port>3306</Port>
+          <!--The user name that should be used to connect to the database server.-->
+          <Username>root</Username>
+          <!--The password that should be used to access the database server-->
+          <Password>root</Password>
+          <!--The name of the database schema where the object will reside or the object creations statements should be executed from.-->
+          <Database>mysql</Database>
+          <!--The type of database object that the configuration defines.  Valid values include: "database" or "table"-->
+          <EntityType>database</EntityType>
+          <!--The name of the entity object that is to be created.-->
+          <EntityName>assignment2</EntityName>
+     </Configuration>
+     <!--Configuration template for creating and loading a table.-->
+     <Configuration id="2">
+          <!--The type of the database connection. Valid values include: "MySql", "SqlServer", "sqlite" or "Oracle".  NOTE - Currently only MySql is supported.-->
+          <DatabaseType>MySql</DatabaseType>
+          <!--The database server domain or ip address. For example, "127.0.0.1" or "localhost".-->
+          <Server>127.0.0.1</Server>
+          <!--The database server port number.  Note - for MySql, 3306 is the default (suggested).-->
+          <Port>3306</Port>
+          <!--The user name that should be used to connect to the database server.-->
+          <Username>root</Username>
+          <!--The password that should be used to access the database server-->
+          <Password>root</Password>
+          <!--The name of the database schema where the object will reside or the object creations statements should be executed from.-->
+          <Database>assignment2</Database>
+          <!--The type of database object that the configuration defines.  Valid values include: "database" or "table"-->
+          <EntityType>table</EntityType>
+          <!--The name of the entity object that is to be created.-->
+          <EntityName>users</EntityName>
+          <!--File path and name of the XML file defining the data that should be loaded into the target table. Note - Currently this setting is not actually used. In other words it will be implemented in subsequent iteration.-->
+          <InputXmlFile>users.xml</InputXmlFile>
+          <!--File path and name of the XSD file defining the schema of the new table. -->
+          <InputXsdFile>users.xsd</InputXsdFile>
+     </Configuration>
+</Configurations>

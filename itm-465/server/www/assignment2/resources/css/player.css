@@ -1,0 +1,92 @@
+
+.player {
+    padding-left : 52px;
+    padding-right: 52px;
+    padding-bottom: 10px;
+}
+
+.player .header {
+    color: #74A245;
+    position: absolute;
+    top: 152;
+    text-align: center;
+
+    left: 45%;
+    width: 40%;
+    padding: 10px;
+    filter: alpha(opacity=50);
+    text-align: left;
+    opacity: 1;
+    border: none;
+    z-index: 10;
+}
+
+#player-navbar {
+    background-color: #0e0e0e !important;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+.player-navbar .bs-component {
+    padding-top: 40px !important;
+}
+
+.player-navbar .progress {
+    padding-top: 38px;
+}
+
+.player video {
+    width: 100%;
+    background-color: #000000;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+}
+
+.player .button-img {
+    width: 35px;
+    cursor: hand;
+}
+
+.player .progress {
+    height: 20px;
+    margin-left: -3%;
+    margin-right: 2%;
+}
+
+.player .progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #74A245;
+}
+
+.player .subTitle {
+    position: absolute;
+    top: 50%;
+    margin-right: 100%;
+    left: 25%;
+    width: 50%;
+    padding: 10px;
+    filter: alpha(opacity=50);
+    text-align: center;
+    opacity: 0.5;
+    border: none;
+    background-color: #333333;
+    z-index: 10;
+}
+
+.player .spacer-img {
+    width: 15px;
+}
+
+.player .hidden {
+    display: none;
+}
+
+.player .button-img .roll .on { display: none; }
+.player .button-img .roll .off { display: block; }
+.player .button-img .roll:hover .on { display: block; }
+.player .button-img .roll:hover .off { display: none; }
+

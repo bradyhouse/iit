@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://itmd466.sat.iit.edu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://itmd466.sat.iit.edu/">
+
+<xs:element name="getCustomerDetailHtml" type="tns:getCustomerDetailHtml"/>
+
+<xs:element name="getCustomerDetailHtmlResponse" type="tns:getCustomerDetailHtmlResponse"/>
+
+<xs:element name="getFullInfo1" type="tns:getFullInfo1"/>
+
+<xs:element name="getFullInfo1Response" type="tns:getFullInfo1Response"/>
+
+<xs:element name="getFullInfo2" type="tns:getFullInfo2"/>
+
+<xs:element name="getFullInfo2Response" type="tns:getFullInfo2Response"/>
+
+<xs:element name="getFullInfo3" type="tns:getFullInfo3"/>
+
+<xs:element name="getFullInfo3Response" type="tns:getFullInfo3Response"/>
+
+<xs:element name="getFullInfo4" type="tns:getFullInfo4"/>
+
+<xs:element name="getFullInfo4Response" type="tns:getFullInfo4Response"/>
+
+<xs:element name="getFullInv1" type="tns:getFullInv1"/>
+
+<xs:element name="getFullInv1Response" type="tns:getFullInv1Response"/>
+
+<xs:element name="getFullInv2" type="tns:getFullInv2"/>
+
+<xs:element name="getFullInv2Response" type="tns:getFullInv2Response"/>
+
+<xs:element name="getFullInv3" type="tns:getFullInv3"/>
+
+<xs:element name="getFullInv3Response" type="tns:getFullInv3Response"/>
+
+<xs:element name="getFullInv4" type="tns:getFullInv4"/>
+
+<xs:element name="getFullInv4Response" type="tns:getFullInv4Response"/>
+
+<xs:element name="getFullName1" type="tns:getFullName1"/>
+
+<xs:element name="getFullName1Response" type="tns:getFullName1Response"/>
+
+<xs:element name="getFullName2" type="tns:getFullName2"/>
+
+<xs:element name="getFullName2Response" type="tns:getFullName2Response"/>
+
+<xs:element name="getFullName3" type="tns:getFullName3"/>
+
+<xs:element name="getFullName3Response" type="tns:getFullName3Response"/>
+
+<xs:element name="getFullName4" type="tns:getFullName4"/>
+
+<xs:element name="getFullName4Response" type="tns:getFullName4Response"/>
+
+<xs:element name="getItem" type="tns:getItem"/>
+
+<xs:element name="getItemResponse" type="tns:getItemResponse"/>
+
+<xs:element name="getMessage" type="tns:getMessage"/>
+
+<xs:element name="getMessageResponse" type="tns:getMessageResponse"/>
+
+<xs:element name="getPending" type="tns:getPending"/>
+
+<xs:element name="getPendingResponse" type="tns:getPendingResponse"/>
+
+<xs:element name="getQuantity" type="tns:getQuantity"/>
+
+<xs:element name="getQuantityResponse" type="tns:getQuantityResponse"/>
+
+<xs:complexType name="getFullInfo3">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullInfo3Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullInfo4">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullInfo4Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPending">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPendingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomerDetailHtml">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getCustomerDetailHtmlResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMessage">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getMessageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItem">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getItemResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullInv1">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullInv1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullInv2">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullInv2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullInv3">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullInv3Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullInv4">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullInv4Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullName3">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullName3Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getQuantity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getQuantityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullName2">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullName2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullInfo1">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullInfo1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullName1">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullName1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullInfo2">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullInfo2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFullName4">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getFullName4Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

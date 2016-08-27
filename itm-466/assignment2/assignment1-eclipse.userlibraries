@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="sqljdbc">
+    <archive path="/Users/e13542/github/ITM466/assignment1-eclipse/lib/sqljdbc4.jar" />
+  </library>
+  <library name="mysql-connector-java-5.0.8-bin">
+    <archive path="/Users/e13542/github/ITM466/assignment1-eclipse/lib/mysql-connector-java-5.0.8-bin.jar" />
+  </library>
+  <library name="sass-stdlib" />
+</eclipse-userlibraries>
+

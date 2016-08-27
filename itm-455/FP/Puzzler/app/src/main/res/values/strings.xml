@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">\tp u z z </string>
+    <string name="action_settings">Settings</string>
+    <string name="square_empty_text">\t\t</string>
+
+    <color name="white">#ffffff</color>
+
+    <string name="help_puzzle_title">Puz</string>
+    <string name="help_puzzle_content">Puzz is a game inspired by the classic \"Fifteen Puzzle\" game (above). It has 3 levels corresponding to a \"3x3\",\ \"4x4\", or \"5x5\" version of the game. In order to complete (or win) a level, simply put the squares in sequential order.</string>
+
+    <string name="puzzle_settings_reset">Reset</string>
+    <string name="puzzle_settings_level_1">3 x 3</string>
+    <string name="puzzle_settings_level_2">4 x 4</string>
+    <string name="puzzle_settings_level_3">5 x 5</string>
+
+    <string name="main_3x3_button_text">3 x 3</string>
+    <string name="main_4x4_button_text">4 x 4</string>
+    <string name="main_5x5_button_text">5 x 5</string>
+
+    <item type="id" name="row1" />
+    <item type="id" name="row2" />
+    <item type="id" name="row3" />
+    <item type="id" name="row4" />
+    <item type="id" name="row5" />
+
+    <item type="id" name="square1" />
+    <item type="id" name="square2" />
+    <item type="id" name="square3" />
+    <item type="id" name="square4" />
+    <item type="id" name="square5" />
+    <item type="id" name="square6" />
+    <item type="id" name="square7" />
+    <item type="id" name="square8" />
+    <item type="id" name="square9" />
+    <item type="id" name="square10" />
+    <item type="id" name="square11" />
+    <item type="id" name="square12" />
+    <item type="id" name="square13" />
+    <item type="id" name="square14" />
+    <item type="id" name="square15" />
+    <item type="id" name="square16" />
+    <item type="id" name="square17" />
+    <item type="id" name="square18" />
+    <item type="id" name="square19" />
+    <item type="id" name="square20" />
+    <item type="id" name="square21" />
+    <item type="id" name="square22" />
+    <item type="id" name="square23" />
+    <item type="id" name="square24" />
+    <item type="id" name="square25" />
+</resources>

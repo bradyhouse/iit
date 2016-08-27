@@ -1,0 +1,94 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:ezcomp="http://xmlns.jcp.org/jsf/composite/ezcomp">
+    <h:head>
+        <ui:param name="viewId" value="#{facesContext.viewRoot.viewId}" />
+        <title><ui:insert name="title">FMP</ui:insert></title>
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="description" content=""></meta>
+        <meta name="author" content=""></meta>    
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap-theme.min.css"></link>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->    
+    </h:head>
+    <h:body>
+        <h:panelGroup layout="block" class="container">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <ui:fragment rendered="#{not empty loginController.remoteUser}">
+                        <li class="#{viewId == '/secure/welcome.xhtml' ? 'active' : ''}">
+                            <h:link outcome="/secure/welcome.xhtml" value="Home"/>
+                        </li>
+                    </ui:fragment>
+                    <ui:fragment rendered="#{loginController.patient}">
+                        <li class="#{viewId == '/secure/patient.xhtml' ? 'active' : ''}">
+                            <h:link outcome="/secure/patient.xhtml" value="Profile"/>
+                        </li>
+                    </ui:fragment>
+                    <ui:fragment rendered="#{loginController.doctor}">
+                        <li class="#{viewId == '/secure/doctor.xhtml' ? 'active' : ''}">
+                            <h:link outcome="/secure/doctor.xhtml" value="Profile"/>
+                        </li>
+                    </ui:fragment>
+                   <ui:fragment rendered="#{loginController.doctor}">
+                        <ui:fragment rendered="#{loginController.admin}">
+                             <li class="#{viewId == '/secure/admin.xhtml' ? 'active' : ''}">
+                                 <h:link outcome="/secure/admin.xhtml" value="Admin"/>
+                             </li>
+                         </ui:fragment>
+                    </ui:fragment>
+                </ul>
+
+                <ui:fragment rendered="#{not empty loginController.remoteUser}">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-text">Signed in as #{loginController.remoteUser}</li>
+                        <li>
+                            <h:form class="navbar-form">
+                                <h:commandButton class="btn btn-default" action="#{loginController.logout}" value="Logout"/>
+                            </h:form>
+                        </li>
+                    </ul>
+                </ui:fragment>
+            </nav>
+
+            <h4>Add a new Patient </h4>
+            <hr/>
+            <h:messages showDetail="true" errorStyle="color: red" warnStyle="color: orange"
+                        infoStyle="color: blue" globalOnly="false"  showSummary="true"/>
+             <h:form>
+                 <ezcomp:newPatientUser 
+                     doctor="#{registerPatientController.doctorUsername}"
+                     login="#{registerPatientController.user.userName}" 
+                     password="#{registerPatientController.user.password}"
+                     firstname="#{registerPatientController.user.firstName}"
+                     lastname="#{registerPatientController.user.lastName}"
+                     birthdate="#{registerPatientController.user.birthDate}"
+                     address="#{registerPatientController.user.streetAddress}"
+                     city="#{registerPatientController.user.city}"
+                     state="#{registerPatientController.user.state}"
+                     country="#{registerPatientController.user.country}"
+                     zip="#{registerPatientController.user.zip}"
+                     phoneNumber="#{registerPatientController.user.phoneNumber}"
+                     provider="#{registerPatientController.user.provider}"
+                     subscriberGroup="#{registerPatientController.user.subscriberGroup}"
+                     subscriberId="#{registerPatientController.user.subscriberId}"/>
+                <hr />
+                <h:commandButton value="Add Patient" class="btn btn-default" action="#{registerPatientController.doAddPatientUser()}"/>
+                <h:commandButton value="Cancel" class="btn btn-default" action="#{registerPatientController.doCancel()}"/>
+            </h:form>
+        <hr />
+        <a href="../javadoc/index.html" target="_blank">JavaDocs</a>
+        </h:panelGroup>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery.js"></script>        
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>        
+    </h:body>
+</html>

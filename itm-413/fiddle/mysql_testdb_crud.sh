@@ -1,0 +1,4 @@
+python mysql_testdb_delete_record.py
+python mysql_testdb_insert_record.py
+python mysql_testdb_update_record.py
+python mysql_testdb_select_record.py

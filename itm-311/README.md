@@ -1,0 +1,4 @@
+AutoKnight
+==========
+
+As the final project for my ITM 311, Introduction to Software development, I obtained permission from my professor to do something slightly different. Rather than the assigned project, I wrote a graphically solution to problem 6.22. Per the textbook, 6.22 (Knight's Tour) Write an application to move the knight around the chessboard. Keep a counter that varies from 1 to 64. Record the latest count in each square the knight moves to. Test each potential move to see if the knight has already visited the square. Test every potential move to ensure that the knight does not land off the chess board (Deitel and Deitel 284). 

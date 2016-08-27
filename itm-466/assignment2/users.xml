@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <id>1010</id>
+        <firstName>bob</firstName>
+        <lastName>smith</lastName>
+        <socialSecurityNumber>111-111-1111</socialSecurityNumber>
+        <active>0</active>
+        <addressLine1>1305 South Michigan Ave</addressLine1>
+        <addressLine2>apt 2020</addressLine2>
+        <city>Chicago</city>
+        <state>Illinois</state>
+        <country>United States</country>        
+        <zipCode>60605</zipCode>
+        <phoneNumber>973-768-7017</phoneNumber>
+        <netWorth>100.01</netWorth>
+        <locked>0</locked>
+        <updatePassword>0</updatePassword>
+    </user>
+</users>

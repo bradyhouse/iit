@@ -1,0 +1,161 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <script src="aes.js"></script>
+    <script type="text/javascript">
+        var CLIENT_ID = '204334724477-6m5pfe3bjj6r3rr71pomsgs8f314vql3.apps.googleusercontent.com';
+        var SCOPES = 'https://www.googleapis.com/auth/drive';
+        function handleClientLoad() {
+            console.log('handleClientLoad');
+            window.setTimeout(checkAuth, 1);
+        }
+        function checkAuth() {
+            console.log('checkAuth');
+            gapi.auth.authorize(
+                    {'client_id': CLIENT_ID, 'scope': SCOPES, 'immediate': true},
+                    handleAuthResult);
+        }
+        function handleAuthResult(authResult) {
+            console.log('handleAuthResult');
+            var authButton = document.getElementById('authorizeButton'),
+                filePicker = document.getElementById('filePicker'),
+                fileLister = document.getElementById('fileLister');
+            fileLister.style.display = 'none';
+            authButton.style.display = 'none';
+            filePicker.style.display = 'none';
+            if (authResult && !authResult.error) {
+                // Access token has been successfully retrieved, requests can be sent to the API.
+                filePicker.style.display = 'block';
+                fileLister.style.display = 'block';
+                filePicker.onchange = uploadFile;
+                fileLister.onclick = listFiles;
+
+            } else {
+                // No access token could be retrieved, show the button to start the authorization flow.
+                authButton.style.display = 'block';
+                authButton.onclick = function() {
+                    gapi.auth.authorize(
+                            {'client_id': CLIENT_ID, 'scope': SCOPES, 'immediate': false},
+                            handleAuthResult);
+                };
+            }
+        }
+        function listFiles(evt) {
+            console.log('listFiles');
+            retrieveAllFiles(function (result) {
+               console.log(result);
+            });
+        }
+        function uploadFile(evt) {
+            console.log('uploadFile');
+            gapi.client.load('drive', 'v2', function() {
+                var file = evt.target.files[0];
+                insertFile(file);
+            });
+        }
+        function insertFile(fileData, callback) {
+            console.log('insertFile');
+            const boundary = '-------314159265358979323846';
+            const delimiter = "\r\n--" + boundary + "\r\n";
+            const close_delim = "\r\n--" + boundary + "--";
+            console.log('fileData');
+            console.log(fileData);
+            //var reader = new FileReader();
+            //reader.readAsBinaryString(fileData);
+            //reader.onload = function(e) {
+                var contentType = fileData.type || 'application/octet-stream';
+                var metadata = {
+                    'title': fileData.name,
+                    'mimeType': contentType
+                };
+
+                var base64Data = btoa(fileData);
+                var multipartRequestBody =
+                        delimiter +
+                                'Content-Type: application/json\r\n\r\n' +
+                                JSON.stringify(metadata) +
+                                delimiter +
+                                'Content-Type: ' + contentType + '\r\n' +
+                                'Content-Transfer-Encoding: base64\r\n' +
+                                '\r\n' +
+                                base64Data +
+                                close_delim;
+
+                var request = gapi.client.request({
+                    'path': '/upload/drive/v2/files',
+                    'method': 'POST',
+                    'params': {'uploadType': 'multipart'},
+                    'headers': {
+                        'Content-Type': 'multipart/mixed; boundary="' + boundary + '"'
+                    },
+                    'body': multipartRequestBody});
+                if (!callback) {
+                    callback = function(file) {
+                        console.log(file)
+                    };
+                }
+                request.execute(callback);
+            //}
+        }
+    </script>
+    <script src="aes.js"></script>
+    <script src="filepicker.js"></script>
+    <script>
+        function downloadFile(file, callback) {
+            console.log('downloadFile');
+            if (file.downloadUrl) {
+                var accessToken = gapi.auth.getToken().access_token;
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', file.downloadUrl);
+                xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+                xhr.onload = function() {
+                    callback(xhr.responseText);
+                };
+                xhr.onerror = function() {
+                    callback(null);
+                };
+                xhr.send();
+            } else {
+                callback(null);
+            }
+        }
+        function initPicker() {
+            var picker = new FilePicker({
+                apiKey: 'AIzaSyBx53vTrzLO0h-z1XbErTELfP3E1Smbmis',
+                clientId: '204334724477-dc0h7bs73dqpaa9rkbb5s08ea0u2tk9n',
+                buttonEl: document.getElementById('pick'),
+                onSelect: function(file) {
+                    console.log('onSelect');
+                    console.log('file');
+                    console.log(file);
+                    downloadFile(file, function(blob) {
+                        console.log('downloadFile > callback');
+                        //console.log('blob');
+                        //console.log(blob);
+                        var password = 'house';
+                        // Use the CryptoJS library and the AES cypher to encrypt the
+                        // contents of the file, held in e.target.result, with the password
+                                encrypted = CryptoJS.AES.encrypt(blob, password);
+                        console.log('encrypted');
+                        console.log(encrypted);
+                        encrypted['name'] = file.title + ".encrypted";
+                        insertFile(encrypted, function() {
+                           alert('File uploaded!');
+                        });
+                    });
+                }
+            });
+        }
+    </script>
+    <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    <script src="https://www.google.com/jsapi?key=AIzaSyBx53vTrzLO0h-z1XbErTELfP3E1Smbmis"></script>
+    <script src="https://apis.google.com/js/client.js?onload=initPicker"></script>
+
+</head>
+<body>
+<!--Add a file picker for the user to start the upload process -->
+<input type="file" id="filePicker" style="display: none" value="Files" />
+<button type="button" id="pick">Pick File</button>
+<input type="password" id="passPhrase" style="display: none;" />
+</body>
+</html>

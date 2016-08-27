@@ -1,0 +1,314 @@
+parsing CSV...
+5.0 seconds ellapsed.
+NA 2010 Population % Incr: 0.1893731011587931
+NA 2011 Population % Incr: 0.1893731011587931
+NA 2010 Population % Incr: 0.08833411874243048
+NA 2011 Population % Incr: 0.08833411874243048
+NA 2010 Population % Incr: 0.07391786515057074
+NA 2011 Population % Incr: 0.07391786515057074
+NA 2010 Population % Incr: 0.26342805276909825
+NA 2011 Population % Incr: 0.26342805276909825
+NA 2010 Population % Incr: 0.25654679128868985
+NA 2011 Population % Incr: 0.25654679128868985
+NA 2010 Population % Incr: 0.11854213675025915
+NA 2011 Population % Incr: 0.11854213675025915
+NA 2010 Population % Incr: 0.5512291071496457
+NA 2011 Population % Incr: 0.5512291071496457
+NA 2010 Population % Incr: 0.3308034573771987
+NA 2011 Population % Incr: 0.3308034573771987
+NA 2010 Population % Incr: 0.19434682901217146
+NA 2011 Population % Incr: 0.19434682901217146
+NA 2010 Population % Incr: 0.22612900493037572
+NA 2011 Population % Incr: 0.22612900493037572
+NA 2010 Population % Incr: 0.36777250280164064
+NA 2011 Population % Incr: 0.36777250280164064
+NA 2010 Population % Incr: 0.03919871229012531
+NA 2011 Population % Incr: 0.03919871229012531
+NA 2010 Population % Incr: 0.20691943951337183
+NA 2011 Population % Incr: 0.20691943951337183
+NA 2010 Population % Incr: 0.5299780796147064
+NA 2011 Population % Incr: 0.5299780796147064
+NA 2010 Population % Incr: 0.19840105830917854
+NA 2011 Population % Incr: 0.19840105830917854
+NA 2010 Population % Incr: 0.2528680816626513
+NA 2011 Population % Incr: 0.2528680816626513
+NA 2010 Population % Incr: 0.22480318694171364
+NA 2011 Population % Incr: 0.22480318694171364
+NA 2010 Population % Incr: 0.22454965673247076
+NA 2011 Population % Incr: 0.22454965673247076
+NA 2010 Population % Incr: 0.088444591038072
+NA 2011 Population % Incr: 0.088444591038072
+NA 2010 Population % Incr: 0.10521607699188747
+NA 2011 Population % Incr: 0.10521607699188747
+NA 2010 Population % Incr: 0.1264464030725294
+NA 2011 Population % Incr: 0.1264464030725294
+NA 2010 Population % Incr: 0.21117247867070343
+NA 2011 Population % Incr: 0.21117247867070343
+NA 2010 Population % Incr: 0.1811556629753406
+NA 2011 Population % Incr: 0.1811556629753406
+NA 2010 Population % Incr: 0.26406392416064683
+NA 2011 Population % Incr: 0.26406392416064683
+NA 2010 Population % Incr: -0.07392568736962317
+NA 2011 Population % Incr: -0.07392568736962317
+NA 2010 Population % Incr: 0.21007864829138112
+NA 2011 Population % Incr: 0.21007864829138112
+NA 2010 Population % Incr: 0.11969218170424743
+NA 2011 Population % Incr: 0.11969218170424743
+NA 2010 Population % Incr: -0.06568433577322513
+NA 2011 Population % Incr: -0.06568433577322513
+NA 2010 Population % Incr: 0.12694372563714607
+NA 2011 Population % Incr: 0.12694372563714607
+NA 2010 Population % Incr: 0.09351945558533574
+NA 2011 Population % Incr: 0.09351945558533574
+NA 2010 Population % Incr: 0.11334250692987241
+NA 2011 Population % Incr: 0.11334250692987241
+NA 2010 Population % Incr: 0.15595073856773953
+NA 2011 Population % Incr: 0.15595073856773953
+NA 2010 Population % Incr: 0.20806629211083802
+NA 2011 Population % Incr: 0.20806629211083802
+NA 2010 Population % Incr: 0.13819402040546538
+NA 2011 Population % Incr: 0.13819402040546538
+NA 2010 Population % Incr: 0.025446800235781695
+NA 2011 Population % Incr: 0.025446800235781695
+NA 2010 Population % Incr: 0.0875692996298636
+NA 2011 Population % Incr: 0.0875692996298636
+NA 2010 Population % Incr: 0.32697481521770805
+NA 2011 Population % Incr: 0.32697481521770805
+NA 2010 Population % Incr: 0.08825424819683082
+NA 2011 Population % Incr: 0.08825424819683082
+NA 2010 Population % Incr: 0.2596514594186446
+NA 2011 Population % Incr: 0.2596514594186446
+NA 2010 Population % Incr: 0.30300732540280795
+NA 2011 Population % Incr: 0.30300732540280795
+NA 2010 Population % Incr: 0.012707491404240212
+NA 2011 Population % Incr: 0.012707491404240212
+NA 2010 Population % Incr: 0.23538167818872865
+NA 2011 Population % Incr: 0.23538167818872865
+NA 2010 Population % Incr: 0.18945079108364912
+NA 2011 Population % Incr: 0.18945079108364912
+NA 2010 Population % Incr: 0.12078839719709199
+NA 2011 Population % Incr: 0.12078839719709199
+NA 2010 Population % Incr: -0.0037052273156958178
+NA 2011 Population % Incr: -0.0037052273156958178
+NA 2010 Population % Incr: 0.2538611015262799
+NA 2011 Population % Incr: 0.2538611015262799
+NA 2010 Population % Incr: 0.29698592448844235
+NA 2011 Population % Incr: 0.29698592448844235
+NA 2010 Population % Incr: 0.17847153610637068
+NA 2011 Population % Incr: 0.17847153610637068
+NA 2010 Population % Incr: 0.4291214660114364
+NA 2011 Population % Incr: 0.4291214660114364
+NA 2010 Population % Incr: 0.4194819972611017
+NA 2011 Population % Incr: 0.4194819972611017
+NA 2010 Population % Incr: 0.026848168811057612
+NA 2011 Population % Incr: 0.026848168811057612
+NA 2010 Population % Incr: 0.28650061304607033
+NA 2011 Population % Incr: 0.28650061304607033
+NA 2010 Population % Incr: 0.2737733733459835
+NA 2011 Population % Incr: 0.2737733733459835
+NA 2010 Population % Incr: 0.07404225373395301
+NA 2011 Population % Incr: 0.07404225373395301
+NA 2010 Population % Incr: 0.08217006336924339
+NA 2011 Population % Incr: 0.08217006336924339
+NA 2010 Population % Incr: 0.16464818869250175
+NA 2011 Population % Incr: 0.16464818869250175
+NA 2010 Population % Incr: -0.10228705919739416
+NA 2011 Population % Incr: -0.10228705919739416
+AL 2010 Max / Min Births: 14482
+NA 2011 Max / Min Births: 59866
+AL 2010 Max / Min Deaths: 11562
+AL 2011 Max / Min Deaths: 47768
+AK 2010 Max / Min Births: 2834
+NA 2011 Max / Min Births: 11193
+AK 2010 Max / Min Deaths: 647
+AK 2011 Max / Min Deaths: 3338
+AR 2010 Max / Min Births: 20900
+NA 2011 Max / Min Births: 87887
+AR 2010 Max / Min Deaths: 11164
+AR 2011 Max / Min Deaths: 45899
+CA 2010 Max / Min Births: 9218
+NA 2011 Max / Min Births: 38156
+CA 2010 Max / Min Deaths: 6759
+CA 2011 Max / Min Deaths: 28478
+CO 2010 Max / Min Births: 123173
+NA 2011 Max / Min Births: 508069
+CO 2010 Max / Min Deaths: 57867
+CO 2011 Max / Min Deaths: 234045
+DE 2010 Max / Min Births: 16453
+NA 2011 Max / Min Births: 66213
+DE 2010 Max / Min Deaths: 7350
+DE 2011 Max / Min Deaths: 31123
+DC 2010 Max / Min Births: 9241
+NA 2011 Max / Min Births: 37319
+DC 2010 Max / Min Deaths: 6855
+DC 2011 Max / Min Deaths: 28244
+FL 2010 Max / Min Births: 2774
+NA 2011 Max / Min Births: 11172
+FL 2010 Max / Min Deaths: 1898
+FL 2011 Max / Min Deaths: 7633
+GA 2010 Max / Min Births: 2232
+NA 2011 Max / Min Births: 9003
+GA 2010 Max / Min Deaths: 1098
+GA 2011 Max / Min Deaths: 4773
+HI 2010 Max / Min Births: 51537
+NA 2011 Max / Min Births: 213292
+HI 2010 Max / Min Deaths: 42097
+HI 2011 Max / Min Deaths: 171257
+ID 2010 Max / Min Births: 32410
+NA 2011 Max / Min Births: 134442
+ID 2010 Max / Min Deaths: 16640
+ID 2011 Max / Min Deaths: 70688
+IN 2010 Max / Min Births: 4600
+NA 2011 Max / Min Births: 18501
+IN 2010 Max / Min Deaths: 2241
+IN 2011 Max / Min Deaths: 9730
+IA 2010 Max / Min Births: 5789
+NA 2011 Max / Min Births: 22954
+IA 2010 Max / Min Deaths: 2545
+IA 2011 Max / Min Deaths: 11275
+KS 2010 Max / Min Births: 42060
+NA 2011 Max / Min Births: 167000
+KS 2010 Max / Min Deaths: 24484
+KS 2011 Max / Min Deaths: 100651
+KY 2010 Max / Min Births: 21286
+NA 2011 Max / Min Births: 84732
+KY 2010 Max / Min Deaths: 14122
+KY 2011 Max / Min Deaths: 56499
+LA 2010 Max / Min Births: 9400
+NA 2011 Max / Min Births: 38324
+LA 2010 Max / Min Deaths: 6433
+LA 2011 Max / Min Deaths: 27895
+ME 2010 Max / Min Births: 9845
+NA 2011 Max / Min Births: 40132
+ME 2010 Max / Min Deaths: 5459
+ME 2011 Max / Min Deaths: 24038
+MD 2010 Max / Min Births: 13991
+NA 2011 Max / Min Births: 56447
+MD 2010 Max / Min Deaths: 10486
+MD 2011 Max / Min Deaths: 41945
+MA 2010 Max / Min Births: 15571
+NA 2011 Max / Min Births: 63969
+MA 2010 Max / Min Deaths: 9771
+MA 2011 Max / Min Deaths: 40780
+MI 2010 Max / Min Births: 3186
+NA 2011 Max / Min Births: 12868
+MI 2010 Max / Min Deaths: 3290
+MI 2011 Max / Min Deaths: 12688
+MN 2010 Max / Min Births: 18102
+NA 2011 Max / Min Births: 72995
+MN 2010 Max / Min Deaths: 10563
+MN 2011 Max / Min Deaths: 43606
+MS 2010 Max / Min Births: 18589
+NA 2011 Max / Min Births: 73368
+MS 2010 Max / Min Deaths: 12958
+MS 2011 Max / Min Deaths: 52355
+MO 2010 Max / Min Births: 28932
+NA 2011 Max / Min Births: 113894
+MO 2010 Max / Min Deaths: 21459
+MO 2011 Max / Min Deaths: 86988
+MT 2010 Max / Min Births: 16979
+NA 2011 Max / Min Births: 68088
+MT 2010 Max / Min Deaths: 9326
+MT 2011 Max / Min Deaths: 38436
+NE 2010 Max / Min Births: 9515
+NA 2011 Max / Min Births: 40464
+NE 2010 Max / Min Deaths: 6516
+NE 2011 Max / Min Deaths: 28837
+NV 2010 Max / Min Births: 18600
+NA 2011 Max / Min Births: 75910
+NV 2010 Max / Min Deaths: 13350
+NV 2011 Max / Min Deaths: 54361
+NH 2010 Max / Min Births: 2973
+NA 2011 Max / Min Births: 11911
+NH 2010 Max / Min Deaths: 1840
+NH 2011 Max / Min Deaths: 8629
+NJ 2010 Max / Min Births: 6316
+NA 2011 Max / Min Births: 25991
+NJ 2010 Max / Min Deaths: 3362
+NJ 2011 Max / Min Deaths: 14878
+NM 2010 Max / Min Births: 9162
+NA 2011 Max / Min Births: 36772
+NM 2010 Max / Min Deaths: 4743
+NM 2011 Max / Min Deaths: 19373
+NY 2010 Max / Min Births: 3191
+NA 2011 Max / Min Births: 12795
+NY 2010 Max / Min Deaths: 2350
+NY 2011 Max / Min Deaths: 9778
+NC 2010 Max / Min Births: 25275
+NA 2011 Max / Min Births: 104343
+NC 2010 Max / Min Deaths: 16884
+NC 2011 Max / Min Deaths: 68372
+ND 2010 Max / Min Births: 7109
+NA 2011 Max / Min Births: 28511
+ND 2010 Max / Min Deaths: 3636
+ND 2011 Max / Min Deaths: 15760
+OH 2010 Max / Min Births: 61126
+NA 2011 Max / Min Births: 242972
+OH 2010 Max / Min Deaths: 36134
+OH 2011 Max / Min Deaths: 146864
+OK 2010 Max / Min Births: 29777
+NA 2011 Max / Min Births: 122131
+OK 2010 Max / Min Deaths: 19235
+OK 2011 Max / Min Deaths: 78169
+OR 2010 Max / Min Births: 2280
+NA 2011 Max / Min Births: 8960
+OR 2010 Max / Min Deaths: 1226
+OR 2011 Max / Min Deaths: 5915
+PA 2010 Max / Min Births: 35487
+NA 2011 Max / Min Births: 140808
+PA 2010 Max / Min Deaths: 26758
+PA 2011 Max / Min Deaths: 107668
+RI 2010 Max / Min Births: 13366
+NA 2011 Max / Min Births: 53727
+RI 2010 Max / Min Deaths: 7930
+RI 2011 Max / Min Deaths: 34528
+SC 2010 Max / Min Births: 11737
+NA 2011 Max / Min Births: 46232
+SC 2010 Max / Min Deaths: 7702
+SC 2011 Max / Min Deaths: 31451
+SD 2010 Max / Min Births: 36145
+NA 2011 Max / Min Births: 143420
+SD 2010 Max / Min Deaths: 30805
+SD 2011 Max / Min Deaths: 125152
+TX 2010 Max / Min Births: 2761
+NA 2011 Max / Min Births: 11012
+TX 2010 Max / Min Deaths: 2247
+TX 2011 Max / Min Deaths: 9189
+UT 2010 Max / Min Births: 14781
+NA 2011 Max / Min Births: 59522
+UT 2010 Max / Min Deaths: 10101
+UT 2011 Max / Min Deaths: 41144
+VT 2010 Max / Min Births: 2968
+NA 2011 Max / Min Births: 11763
+VT 2010 Max / Min Deaths: 1329
+VT 2011 Max / Min Deaths: 6772
+VA 2010 Max / Min Births: 20076
+NA 2011 Max / Min Births: 80536
+VA 2010 Max / Min Deaths: 14624
+VA 2011 Max / Min Deaths: 58883
+WA 2010 Max / Min Births: 97517
+NA 2011 Max / Min Births: 396133
+WA 2010 Max / Min Deaths: 39836
+WA 2011 Max / Min Deaths: 165335
+WV 2010 Max / Min Births: 13153
+NA 2011 Max / Min Births: 52003
+WV 2010 Max / Min Deaths: 3420
+WV 2011 Max / Min Deaths: 14314
+WI 2010 Max / Min Births: 1530
+NA 2011 Max / Min Births: 5955
+WI 2010 Max / Min Deaths: 1305
+WI 2011 Max / Min Deaths: 5102
+WY 2010 Max / Min Births: 25179
+NA 2011 Max / Min Births: 101935
+WY 2010 Max / Min Deaths: 13937
+WY 2011 Max / Min Deaths: 58943
+VI 2010 Max / Min Births: 21833
+NA 2011 Max / Min Births: 86767
+VI 2010 Max / Min Deaths: 11764
+VI 2011 Max / Min Deaths: 48434
+Count of States with Population Increases in 2011: 45
+Count of States with Population Decreases in 2011: 3
+State with the greatest population in 2011: CO
+State with the greatest population in 2010: CO
+State with the least population in 2011: GA
+State with the least population in 2010: GA

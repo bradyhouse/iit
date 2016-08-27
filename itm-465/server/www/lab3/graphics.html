@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="ITM 465 | Lab 3 | Spring 2015">
+	<meta name="author" content="bradyhouse@gmail.com">
+	<title>Graphics Lab</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.starter-template {
+			padding: 40px 15px;
+			text-align: center;
+		}
+
+		#viewport {
+			height: 500px;
+			width: 600px;
+			background: white;
+			margin: 0px auto;
+		}
+
+		#viewport-container {
+
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.js"></script>
+	<script src="js/TrackballControls.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+			        aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Lab 3</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+			</ul>
+		</div>
+		<!--/.nav-collapse -->
+	</div>
+</nav>
+
+<div class="container">
+
+	<div class="starter-template">
+		<h1>Graphics</h1>
+
+		<p class="lead">This is my 3d Graphics scene</p>
+
+		<div id="viewport-container" class="well">
+			<div id="viewport">
+			</div>
+		</div>
+
+		<h4>Controls</h4>
+		<h6>Drag Horizontally (left or right) to Rotate along the X-Axis </h6>
+		<h6>Drag Vertically (up or down) to Rotate along the Y-Axis</h6>
+		<h6>Use your mouse wheel to zoom in and out</h6>
+		<p>
+			<a href="js/graphics.js" title="View source code" target="_blank">graphics.js</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+				href="readme.markdown" title="View written answers" target="_blank">written answers</a>
+		</p>
+
+	</div>
+
+	<script src="js/graphics.js"></script>
+	<script>
+		lab3.init($('#viewport'));
+	</script>
+
+</div>
+<!-- /.container -->
+
+</body>
+</html>

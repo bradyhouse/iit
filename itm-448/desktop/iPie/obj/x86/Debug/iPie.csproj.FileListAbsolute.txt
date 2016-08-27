@@ -1,0 +1,10 @@
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\bin\Debug\iPie.exe
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\bin\Debug\iPie.pdb
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\obj\x86\Debug\iPie.csprojResolveAssemblyReference.cache
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\obj\x86\Debug\iPie.exe
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\obj\x86\Debug\iPie.pdb
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\bin\Debug\private.key
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\bin\Debug\publicKey.asc
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\bin\Debug\decrypt.bat
+C:\Users\Brady\Documents\Visual Studio 2010\Projects\iPie\iPie\bin\Debug\encrypt.bat

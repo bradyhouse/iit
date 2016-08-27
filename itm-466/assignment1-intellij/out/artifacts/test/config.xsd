@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Configurations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Configuration"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Configuration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DatabaseType"/>
+        <xs:element ref="Server"/>
+        <xs:element ref="Database"/>
+        <xs:element ref="Port"/>
+        <xs:element ref="Username"/>
+        <xs:element ref="Password"/>
+        <xs:element ref="EntityType"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="InputXmlFile"/>
+          <xs:element ref="InputXsdFile"/>
+        </xs:sequence>
+        <xs:element ref="EntityName"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DatabaseType" type="xs:NCName"/>
+  <xs:element name="Server" type="xs:NCName"/>
+  <xs:element name="Database" type="xs:NCName"/>
+  <xs:element name="Port" type="xs:integer"/>
+  <xs:element name="Username" type="xs:NCName"/>
+  <xs:element name="Password" type="xs:NCName"/>
+  <xs:element name="EntityType" type="xs:NCName"/>
+  <xs:element name="InputXmlFile" type="xs:string"/>
+  <xs:element name="InputXsdFile" type="xs:string"/>
+  <xs:element name="EntityName" type="xs:NCName"/>
+</xs:schema>

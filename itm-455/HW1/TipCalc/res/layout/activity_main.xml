@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.iit.itm455.hw1.tipCalc.MainActivity" >
+    <TextView
+        android:id="@+id/labelMealCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editMealCost"
+        android:text="@string/label_meal_cost" >
+    </TextView>
+    <EditText
+        android:id="@+id/editMealCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/buttonCalculate"
+        android:editable="true"
+        android:enabled="true"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" >
+    </EditText>
+    <TextView
+        android:id="@+id/labelTaxPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTaxPercentage"
+        android:text="@string/label_tax_percentage" >
+    </TextView>
+    <EditText
+        android:id="@+id/editTaxPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editMealCost"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editMealCost"
+        android:editable="true"
+        android:enabled="true"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="15sp" >
+    </EditText>
+	<TextView
+        android:id="@+id/labelTipPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTipPercentage"
+        android:text="@string/label_tip_percentage" >
+    </TextView>
+    <EditText
+        android:id="@+id/editTipPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTaxPercentage"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTaxPercentage"
+        android:editable="true"
+        android:enabled="true"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="15sp" >
+    </EditText>
+    <TextView
+        android:id="@+id/labelTotalMealCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTotalMealCost"
+        android:text="@string/label_total_meal_cost" >
+    </TextView>
+    <EditText
+        android:id="@+id/editTotalMealCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTipPercentage"
+        android:layout_toRightOf="@+id/buttonCalculate"
+        android:editable="false"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" >
+    </EditText>
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelTotalMealCost"
+        android:layout_below="@+id/labelTotalMealCost"
+        android:layout_marginTop="32dp"
+        android:text="CALCULATE"
+        android:textSize="15sp" />
+</RelativeLayout>

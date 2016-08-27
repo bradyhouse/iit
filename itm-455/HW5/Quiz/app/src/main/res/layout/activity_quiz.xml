@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/textMessage"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/text_msg_downloading"
+        android:paddingBottom="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMessage"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/textMessage"
+        android:paddingBottom="20sp">
+
+        <RadioButton
+            android:id="@+id/radioTrue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_true"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_false" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_display"
+        android:visibility="invisible"
+        android:layout_below="@id/radioQuestions"
+        android:layout_alignLeft="@id/textMessage" />
+
+    <ImageView
+        android:id="@+id/imageNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:clickable="true"
+        android:paddingTop="20sp"
+        android:paddingLeft="20sp"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/btnDisplay"
+        android:layout_below="@id/textMessage" />
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_retry"
+        android:visibility="invisible"
+        android:layout_below="@id/textMessage"
+        android:layout_alignLeft="@id/textMessage" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/btnRetry"
+        android:text="@string/btn_exit"
+        android:visibility="invisible"
+        android:layout_below="@id/textMessage"
+        android:layout_toRightOf="@id/btnRetry"></Button>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="2.0"
+        android:isIndicator="true"
+        android:visibility="invisible"
+        android:paddingTop="20sp"
+        android:layout_below="@id/btnDisplay"
+        android:layout_alignLeft="@id/btnDisplay" />
+</RelativeLayout>

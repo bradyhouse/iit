@@ -1,0 +1,17 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+        <item name="android:windowBackground">@color/skyBlue</item>
+    </style>
+    <style name="SpinnerDropDownItem">
+        <item name="android:padding">6dip</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="spinnerItemStyle">
+        <item name="android:padding">6dip</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/skyBlue</item>
+    </style>
+</resources>

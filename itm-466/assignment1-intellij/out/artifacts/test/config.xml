@@ -1,0 +1,27 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Configurations>
+    <!-- Create the database -->
+    <Configuration id="1">
+        <DatabaseType>MySql</DatabaseType>
+        <Server>localhost</Server>
+        <Database>mysql</Database>
+        <Port>8889</Port>
+        <Username>root</Username>
+        <Password>root</Password>
+        <EntityType>Database</EntityType>
+        <EntityName>assignment1</EntityName>        
+    </Configuration>
+    <!-- Add a Table -->
+    <Configuration id="2">
+        <DatabaseType>MySql</DatabaseType>
+        <Server>localhost</Server>
+        <Database>assignment1</Database>
+        <Port>8889</Port>
+        <Username>root</Username>
+        <Password>root</Password>
+        <EntityType>Table</EntityType>
+        <InputXmlFile>../test/users.xml</InputXmlFile>
+        <InputXsdFile>../test/users.xsd</InputXsdFile>
+        <EntityName>users</EntityName> 
+    </Configuration>
+</Configurations>

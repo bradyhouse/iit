@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC438"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.iit.itm455.hw2.temperatureconverter.MainActivity" >
+
+    <TextView
+        android:id="@+id/labelTemperatureRangeMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBarTemperatureRange"
+        android:text="@string/label_temperature_range_min" />
+
+    <SeekBar
+        android:id="@+id/seekBarTemperatureRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelTemperatureRangeMax"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@+id/labelTemperatureRangeMin" />
+
+    <TextView
+        android:id="@+id/labelTemperatureRangeMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/label_temperature_range_max" />
+
+    <TextView
+        android:id="@+id/labelTemperatureFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTemperatureFahrenheit"
+        android:layout_below="@+id/labelTemperatureRangeMin"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_temperature_fahrenheit" />
+
+    <TextView
+        android:id="@+id/editTemperatureFahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/labelTemperatureRangeMax"
+        android:layout_marginTop="20dp"
+        android:editable="false"
+        android:enabled="true"
+        android:inputType="numberDecimal"
+        android:text="@string/text_temperature_fahrenheit"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/labelTemperatureCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTemperatureCelsius"
+        android:layout_below="@+id/labelTemperatureFahrenheit"
+        android:text="@string/label_temperature_celsius" />
+
+    <TextView
+        android:id="@+id/editTemperatureCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTemperatureFahrenheit"
+        android:editable="false"
+        android:enabled="true"
+        android:inputType="numberDecimal"
+        android:text="@string/text_temperature_celsius"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/labelStatusMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelTemperatureCelsius"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue"
+        android:text="@string/label_status_message" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/labelStatusMessage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/too_cold" />
+
+</RelativeLayout>

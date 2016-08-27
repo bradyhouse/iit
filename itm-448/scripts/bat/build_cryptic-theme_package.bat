@@ -1,0 +1,37 @@
+ECHO OFF
+REM **************************************************************
+REM COMMAND SCRIPT USED TO BUILD THE CRYPTIC-THEME 
+REM USING SENCHA CMD V5 (BETA).  THIS PACKAGE
+REM DEFINES THE THEME USED BY THE CRYPTIC APPLICATION.
+REM **************************************************************
+ECHO ON
+
+:_SETUP_ENV__
+	CALL env_profile.bat
+	IF NOT EXIST "%WORKING_DIR%" (
+		ECHO THE WORKING DIRECTORY, %WORKING_DIR%, DOES NOT EXIST.  PLEASE UPDATE THE env_profile.bat SCRIPT.
+		PAUSE
+		GOTO _ABORTED__
+	)
+	SET PACKAGE=cryptic-theme
+	SET WORKSPACE_PATH=%WORKING_DIR%\web
+	SET PACKAGE_PATH=%WORKSPACE_PATH%\packages\%PACKAGE%
+	SET EXT_PATH=%WORKSPACE_PATH%\ext
+
+cd %PACKAGE_PATH%
+
+:_BUILD_THE_PACKAGE__
+	sencha package build
+	IF %ERRORLEVEL% NEQ 0 (
+		PAUSE
+		GOTO _ABORTED__
+	)
+	GOTO _END__
+	
+:_ABORTED__
+	exit /b
+	
+:_END__
+	cd %SCRIPT_PATH%
+	ECHO BUILD COMPLETE
+	PAUSE 

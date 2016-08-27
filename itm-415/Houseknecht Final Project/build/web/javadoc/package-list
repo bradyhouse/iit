@@ -1,0 +1,6 @@
+beans
+domain
+domain.ejb
+domain.ejb.security
+domain.security
+servlets

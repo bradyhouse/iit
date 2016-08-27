@@ -1,0 +1,17 @@
+ALTER TABLE Shipping_Address DROP FOREIGN KEY FK_Shipping_Address_CUSTOMER_ID
+ALTER TABLE Customer_Information DROP FOREIGN KEY FK_Customer_Information_custinfo_ID
+ALTER TABLE Customer_Information DROP FOREIGN KEY FK_Customer_Information_Customer_ID
+ALTER TABLE Orders DROP FOREIGN KEY FK_Orders_customers_ID
+ALTER TABLE Orders DROP FOREIGN KEY FK_Orders_items_ID
+ALTER TABLE Unselected_Items DROP FOREIGN KEY FK_Unselected_Items_Inventory_ID
+ALTER TABLE Unselected_Items DROP FOREIGN KEY FK_Unselected_Items_orderless_ID
+ALTER TABLE Orderless_Inventory DROP FOREIGN KEY FK_Orderless_Inventory_Orderless_ID
+ALTER TABLE Orderless_Inventory DROP FOREIGN KEY FK_Orderless_Inventory_items_ID
+DROP TABLE Shipping_Address
+DROP TABLE Customers
+DROP TABLE Inventory
+DROP TABLE Orderless
+DROP TABLE Customer_Information
+DROP TABLE Orders
+DROP TABLE Unselected_Items
+DROP TABLE Orderless_Inventory

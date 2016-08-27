@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookReviews</string>
+    <string name="icon_alt_text">book cover thumbnail</string>
+    <string name="action_settings">Settings</string>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="skyBlue">#99CCFF</color>
+    <color name="black">#000000</color>
+</resources>

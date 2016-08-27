@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BookReviews</string>
+    <string name="icon_alt_text">book cover thumbnail</string>
+    <string name="action_settings">Settings</string>
+</resources>

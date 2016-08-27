@@ -1,0 +1,50 @@
+<div id="dialog-modal" style="height:0px; display: none;" title="Spu: Contact Us">
+
+    <!-- Form Code Start -->
+<form id='contactus' action='<?php echo $formproc->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'
+enctype="multipart/form-data">
+
+        <input type='hidden' name='submitted' id='submitted' value='1'/>
+        <input type='hidden' name='<?php echo $formproc->GetFormIDInputName(); ?>' value='<?php echo $formproc->GetFormIDInputValue(); ?>'/>
+        <input type='text'  class='spmhidip' name='<?php echo $formproc->GetSpamTrapInputName(); ?>' />
+
+        <div class='short_explanation'>* required fields</div>
+
+        <div><span class='error'><?php echo $formproc->GetErrorMessage(); ?></span></div>
+        <div class='container'>
+            <label for='name' >Your Full Name*: </label><br/>
+            <input type='text' name='name' id='name' value='<?php echo $formproc->SafeDisplay('name') ?>' maxlength="50" /><br/>
+            <span id='contactus_name_errorloc' class='error'></span>
+        </div>
+        <div class='container'>
+            <label for='email' >Email Address*:</label><br/>
+            <input type='text' name='email' id='email' value='<?php echo $formproc->SafeDisplay('email') ?>' maxlength="50" /><br/>
+            <span id='contactus_email_errorloc' class='error'></span>
+        </div>
+        <div class='container'>
+            <label for='message' >Message:</label><br/>
+            <span id='contactus_message_errorloc' class='error'></span>
+            <textarea rows="10" cols="50" name='message' id='message'><?php echo $formproc->SafeDisplay('message') ?></textarea>
+        </div>
+        <div class='container'>
+            <label for='photo' >Upload your photo:</label><br/>
+            <input type="file" name='photo' id='photo' /><br/>
+            <span id='contactus_photo_errorloc' class='error'></span>
+        </div>
+        <div class='container'>
+            <div><img alt='Captcha image' src='includes/show-captcha.php?rand=1' id='scaptcha_img' /></div>
+            <label for='scaptcha' >Enter the code above here:</label>
+            <input type='text' name='scaptcha' id='scaptcha' maxlength="10" /><br/>
+            <span id='contactus_scaptcha_errorloc' class='error'></span>
+            <div class='short_explanation'>Can't read the image?
+                <a href='javascript: refresh_captcha_img();'>Click here to refresh</a>.</div>
+        </div>
+
+
+        <div class='container'>
+            <input type='submit' class='button' name='SendEmail' value='Submit' />
+        </div>
+
+    </form>
+
+</div>

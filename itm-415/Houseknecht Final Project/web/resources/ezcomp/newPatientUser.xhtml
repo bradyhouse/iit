@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:composite="http://xmlns.jcp.org/jsf/composite"
+                    
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <composite:interface>
+        <composite:attribute name="doctor" required="false"/>
+        <composite:attribute name="login" required="false" />
+        <composite:attribute name="password" required="false" />
+        <composite:attribute name="birthdate" required="false" />
+        <composite:attribute name="city" required="false" />
+        <composite:attribute name="country" required="false" />
+        <composite:attribute name="firstname" required="false" />
+        <composite:attribute name="lastname" required="false" />
+        <composite:attribute name="state" required="false" />
+        <composite:attribute name="address" required="false" />
+        <composite:attribute name="zip" required="false" />
+        <composite:attribute name="phoneNumber" required="false" />
+        <composite:attribute name="provider" required="false" />
+        <composite:attribute name="subscriberGroup" required="false" />
+        <composite:attribute name="subscriberId" required="false" />
+        <composite:attribute name="style" required="false" />
+    </composite:interface>
+    <composite:implementation>
+        <h:inputHidden id="doctorHiddenInput" value="#{cc.attrs.doctor}" />
+        <h:panelGrid columns="2" style="#{cc.attrs.style}">
+            <h:outputLabel value="First Name : " />
+            <h:inputText id="newUserFirstNameInput" value="#{cc.attrs.firstname}" />
+            <h:outputLabel value="Last Name : " />
+            <h:inputText id="newUserLastNameInput" value="#{cc.attrs.lastname}" />
+            <h:outputLabel value="Birth date : " />
+            <h:inputText id="newUserBirthdateInput" value="#{cc.attrs.birthdate}">
+                <f:convertDateTime type="date" dateStyle="short" />
+            </h:inputText>
+            <h:outputLabel value="Street Address : " />
+            <h:inputText id="newUserStreetAddressInput" value="#{cc.attrs.address}" />
+            <h:outputLabel value="City : " />
+            <h:inputText id="newUserCityInput" value="#{cc.attrs.city}" />
+            <h:outputLabel value="State : " />
+            <h:inputText id="newUserStateInput" value="#{cc.attrs.state}" />
+            <h:outputLabel value="Zip : " />
+            <h:inputText id="newUserZipInput" value="#{cc.attrs.zip}" />
+            <h:outputLabel value="Phone Number : " />
+            <h:inputText id="newUserPhoneNumberInput" value="#{cc.attrs.phoneNumber}" />
+            <h:outputLabel value="Provider : " />
+            <h:inputText id="newUserProviderInput" value="#{cc.attrs.provider}" />
+            <h:outputLabel value="Subscriber Group : " />
+            <h:inputText id="newUserSubscriberGroupInput" value="#{cc.attrs.subscriberGroup}" />
+            <h:outputLabel value="Subscriber Id : " />
+            <h:inputText id="newUserSubscriberIdInput" value="#{cc.attrs.subscriberId}" />
+            <h:outputLabel value="Login : "/>
+            <h:inputText id="newUsernameInput" value="#{cc.attrs.login}" />
+            <h:outputLabel value="Password : " />
+            <h:inputSecret id="newUserPasswordInput" value="#{cc.attrs.password}" />
+        </h:panelGrid>
+    </composite:implementation>
+    </ui:composition>

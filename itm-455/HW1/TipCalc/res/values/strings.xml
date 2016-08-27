@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">TipCalc</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="label_meal_cost">Meal Cost $</string>
+    <string name="label_tax_percentage">Tax Percentage %</string>
+    <string name="label_tip_percentage">Tip Percentage %</string>
+    <string name="label_total_meal_cost">Total Meal Cost $</string>
+</resources>

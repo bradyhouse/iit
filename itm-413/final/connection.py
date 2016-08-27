@@ -1,0 +1,5 @@
+db_host_name="127.0.0.1"
+db_name="TestDB"
+db_user="testuser"
+db_password="test123"
+db_table_name="brady"

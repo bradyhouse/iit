@@ -1,0 +1,14 @@
+p { padding-top: 20px; padding-left: 52px; }
+h1 { padding-left: 52px; padding-right: 52px; }
+padding-left-20 { padding-left: 40px !important; }
+text-align-center { text-align: center; }
+.height5 {
+    height: 5px;
+}
+.height2 {
+    height: 2px;
+}
+.height20 {
+    height: 20px;
+}
+

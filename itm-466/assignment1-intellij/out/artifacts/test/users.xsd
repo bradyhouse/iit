@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="users">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="user"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="firstName"/>
+        <xs:element ref="lastName"/>
+        <xs:element ref="socialSecurityNumber"/>
+        <xs:element ref="active"/>
+        <xs:element ref="addressLine1"/>
+        <xs:element ref="addressLine2"/>
+        <xs:element ref="city"/>
+        <xs:element ref="state"/>
+        <xs:element ref="country"/>
+        <xs:element ref="zipCode"/>
+        <xs:element ref="phoneNumber"/>
+        <xs:element ref="netWorth"/>
+        <xs:element ref="locked"/>
+        <xs:element ref="updatePassword"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id" type="xs:integer"/>
+  <xs:element name="firstName" type="xs:string"/>
+  <xs:element name="lastName" type="xs:string"/>
+  <xs:element name="socialSecurityNumber" type="xs:string"/>
+  <xs:element name="active" type="xs:integer"/>
+  <xs:element name="addressLine1" type="xs:string"/>
+  <xs:element name="addressLine2" type="xs:string"/>
+  <xs:element name="city" type="xs:string"/>
+  <xs:element name="state" type="xs:string"/>
+  <xs:element name="country" type="xs:string"/>
+  <xs:element name="zipCode" type="xs:integer"/>
+  <xs:element name="phoneNumber" type="xs:string"/>
+  <xs:element name="netWorth" type="xs:decimal"/>
+  <xs:element name="locked" type="xs:integer"/>
+  <xs:element name="updatePassword" type="xs:integer"/>
+</xs:schema>

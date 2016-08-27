@@ -1,0 +1,23 @@
+<?PHP
+require_once("includes/fgcontactform.php");
+require_once("includes/captcha-creator.php");
+
+$formproc = new FGContactForm();
+$captcha = new FGCaptchaCreator('scaptcha');
+
+$formproc->EnableCaptcha($captcha);
+
+//1. Add your email address here.
+//You can add more than one receipients.
+$formproc->AddRecipient('bradyhouse@gmail.com'); //<<---Put your email address here
+//2. For better security. Get a random tring from this link: http://tinyurl.com/randstr
+// and put it here
+$formproc->SetFormRandomKey('CnRrspl1FyEylUj');
+$formproc->AddFileUploadField('photo','jpg,jpeg,gif,png,bmp',2024);
+
+if (isset($_POST['sendEmail'])) {
+    if ($formproc->ProcessForm()) {
+        $formproc->RedirectToURL("contactus.php");
+    }
+}
+?>

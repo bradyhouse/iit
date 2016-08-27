@@ -1,0 +1,121 @@
+<div class="dialog">
+    <?php
+
+        $quoteDays = array();
+
+        foreach ($daysOfTheWeekOpen as $index => $day) {
+
+            // ToDo: Function refactor this duplicated code
+            $openTimeStr = strtr(strval(sprintf("%0.2f",$openingHours[$day])),".5",":30");
+            $closeTimeStr = strtr(strval(sprintf("%0.2f",$closingHours[$day])),".5",":30");
+            $openTimeArr = split('[:]',$openTimeStr);
+            $closeTimeArr = split('[:]',$closeTimeStr);
+            $openTimeMerStr = intval($openTimeArr[0]) >= 12 ? "pm" : "am";
+            $closeTimeMerStr = "pm";
+            $dateStubStr = strval(date('m/d/Y'));
+            $openTimeDate = date('m/d/Y H:i',strtotime(($dateStubStr." ".$openTimeStr." ".$openTimeMerStr)));
+            $closeTimeDate = date('m/d/Y H:i',strtotime(($dateStubStr." ".$closeTimeStr." ".$closeTimeMerStr)));
+            $openEpochTime = to_epoch_time(strval($openTimeDate));
+            $closeEpochTime = to_epoch_time(strval($closeTimeDate));
+            $hoursEpochTime = $closeEpochTime - $openEpochTime;
+            $operationMins = ((intval(date('H', $hoursEpochTime))) * 60) + intval(date('i', $hoursEpochTime));
+            $hours = sprintf("%0.1f", ($operationMins/60));
+
+            $open = date_create(strval($openTimeDate));
+            $close = date_create(strval($closeTimeDate));
+            $lastDrop = date_create(strval($closeTimeDate));
+
+            date_sub($lastDrop, date_interval_create_from_date_string('3 hours'));
+
+            if ( $hours > 6) {
+                array_push($quoteDays, $day);
+            }
+        }
+    ?> <!-- /php -->
+
+    <form id='calcQuoteForm' action='#' method='post' accept-charset='UTF-8' enctype="multipart/form-data">
+        <H3>Calculate your quote:</H3>
+        <div class='short_explanation'>* required fields</div>
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <label for="selectDay" >Select a day: *&nbsp;</label>
+                </td>
+                <td>
+                    <select name="selectDay">
+                        <option name="0" value="Blank"></option>
+                        <?php
+                        $index = 0;
+                        foreach ($quoteDays as $day) {
+                            echo '<option name="'.strval($index).'" value="'.$day.'">'.$day.'</option>\n';
+                            $index++;
+                        }
+                        ?>
+                    </select>
+                </td>
+                <td>
+                    <span id='calcQuoteFormDayErrorLoc' class='error'></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="selectApplianceType" >Select an Appliance Type: *&nbsp;</label>
+                </td>
+                <td>
+                    <select name="selectApplianceType">
+                        <option name="0" value="Blank"></option>
+                        <option name="1" value="Large">Large</option>
+                        <option name="2" value="Small">Small</option>
+                        <option name="3" value="Mobile Phone">Mobile Phone</option>
+                    </select>
+                </td>
+                <td>
+                    <span id='calcQuoteFormAppTypeErrorLoc' class='error'></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='selectDropOffDay'>Dropoff Day: *&nbsp;</label>
+                </td>
+                <td>
+                    <select name="selectDropOffDay">
+                        <option name="0" value="Blank"></option>
+                        <?php
+                        $index = 0;
+                        foreach ($quoteDays as $day) {
+                            echo '<option name="'.strval($index).'" value="'.$day.'">'.$day.'</option>\n';
+                            $index++;
+                        }
+                        ?>
+                    </select>
+                </td>
+                <td>
+                    <span id='calcQuoteFormDropOffDayErrorLoc' class='error'></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='selectPickupDay' >Pickup Day: *&nbsp;</label>
+                </td>
+                <td>
+                    <select name="selectDropOffDay">
+                        <option name="0" value="Blank"></option>
+                        <?php
+                        foreach ($daysOfTheWeekOpen as $index => $day) {
+                            echo '<option name="'.strval($index).'" value="'.$day.'">'.$day.'</option>\n';
+                        }
+                        ?>
+                    </select>
+                </td>
+                <td>
+                    <span id='calcQuoteFormPickupDayErrorLoc' class='error'></span>
+                </td>
+            </tr>
+        </table>
+        <div class='container'>
+            <input type='submit' class='button' name='submitQuote' value='Submit' />
+        </div>
+    </form>
+</div> <!-- /dialog -->
+</div>

@@ -1,0 +1,17 @@
+<div id="dialog-file-upload" style="height:0px; display: none;" title="SpuPress: Upload Post">
+    <br />
+    <table width="300"> 
+        <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" enctype="multipart/form-data">  
+              <tr> 
+                <td nowrap>Post:&nbsp;&nbsp;</td> <td width="80%"><input type="file" name="file" id="file" /></td>
+            </tr>
+        <tr>
+            <td nowrap>Title:&nbsp;&nbsp;</td>
+            <td><input type='text' name='postTitle' id='postTitle' value='Enter the title for the post' maxlength="180" style="width:300px;" /></td>
+        </tr>
+            <tr> 
+                <td nowrap>&nbsp;&nbsp;&nbsp;</td> <td><input type="submit" value="upload" name="uploadFile" /></td>
+            </tr>  
+        </form>
+    </table>
+</div>

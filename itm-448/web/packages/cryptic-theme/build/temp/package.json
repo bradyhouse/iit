@@ -1,0 +1,14 @@
+{
+  "name": "cryptic-theme",
+  "format": "1",
+  "version": "1.0.0",
+  "creator": "Brady Houseknecht",
+  "summary": "Cryptic Custom Theme",
+  "detailedDescription": "Cryptic custom theme.  This theme extends the 5.0 crisp theme.",
+  "type": "theme",
+  "extend": "ext-theme-access",
+  "requires": [
+    "ext-theme-access"
+  ],
+  "local": true
+}

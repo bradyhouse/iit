@@ -1,0 +1,32 @@
+{
+  "siteName": {
+    "value": "itm463-assignment3-producemarket"
+  },
+  "hostingPlanName": {
+    "value": "itm463Assignment3"
+  },
+  "siteLocation": {
+    "value": "Central US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "serverName": {
+    "value": "itm463assignment3"
+  },
+  "serverLocation": {
+    "value": "East US"
+  },
+  "administratorLogin": {
+    "value": "dbadmin"
+  },
+  "administratorLoginPassword": {
+    "value": "33Wonder"
+  },
+  "databaseName": {
+    "value": "itm463-assignment3-producemarket_db"
+  }
+}

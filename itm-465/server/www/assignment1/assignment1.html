@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cake Baby</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Provided Ajax Lib -->
+    <script src="lib/ajaxCheat.js"></script>
+</head>
+<body class="background-black">
+<div id="cakeHook" class="webkit-box-shadow">
+    <div id="device"
+         class="background-white padding-2-px width-300-px height-429-px webkit-box-shadow border-radius-10-px">
+        <div class="panel panel-default background-orange width-300-px height-429-px border-0-px border-radius-10-px">
+            <div class="panel-body">
+                <p>Cake Baby</p>
+
+                <div id="recipesPanel"
+                     class="panel panel-info scrollable background-blue padding-2-px height-400-px margin-5-px border-0-px">
+                    <div class="panel-heading background-blue text-centered border-0-px text-align-center color-black padding-2-px">
+                        Recipes
+                    </div>
+                    <div class="panel-body background-blue border-radius-2px">
+                        <table class="table">
+                            <tbody id="recipeList">
+                            </tbody>
+                            <!-- tbody -->
+                        </table>
+                        <!--table -->
+                    </div>
+                    <!--panel-body-background-blue -->
+                </div>
+                <!-- recipePanel -->
+                <div class="text-align-center padding-2-px">
+                    <input type="button" id="calculateButton" name="calculateButton" class="btn btn-info btn-xs"
+                           value="Calculate"/>
+                </div>
+                <div class="text-align-center padding-2-px">
+                    <input type="button" id="totalButton" name="totalButton" class="btn btn-info ctrl-stretch"
+                           value="Total"/>
+                </div>
+            </div>
+            <!--panel-body -->
+        </div>
+    </div>
+    <!-- device -->
+    <script src="app.js"></script>
+</div>
+<!-- cakeHook -->
+</body>
+</html>

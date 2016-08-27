@@ -1,0 +1,220 @@
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script type='text/javascript' src='js/captcha/gen_validatorv31.js'></script>
+<script type='text/javascript' src='js/captcha/fg_captcha_validator.js'></script>
+<script type='text/javascript' src="js/jQuery/jquery-1.6.2.js"></script>
+<script type='text/javascript' src="js/jQuery/jquery.bgiframe-2.1.2.js"></script>
+<script type='text/javascript' src="js/jQuery/jquery.ui.core.js"></script>
+<script type='text/javascript' src="js/jQuery/jquery.ui.widget.js"></script>
+<script type='text/javascript' src="js/jQuery/jquery.ui.mouse.js"></script>
+<script type='text/javascript' src="js/jQuery/jquery.ui.draggable.js"></script>
+<script type='text/javascript' src="js/jQuery/jquery.ui.position.js"></script>
+<script type='text/javascript' src="js/jQuery/jquery.ui.resizable.js"></script>
+<script type='text/javascript' src="js/jQuery/jquery.ui.dialog.js"></script>
+<script>
+    $(function()
+    {
+        /// At startup Display the Main Window.
+
+        $( "#page" ).dialog({
+            width: 740,
+            height: 670,
+            modal: false,
+            resizeable: false,
+            overlay: {
+                opacity: 0.7,
+                background: 'black'          },
+            open: function (event, ui) {
+                $('#page').css('overflow', 'hidden');
+            }
+        });
+
+        $("#page").dialog({dialogClass:'transparent'}); //make default dialog $("#dialog2").dialog();
+
+        $("#page").css("background-color","#000");
+
+        $(".ui-dialog-titlebar").hide();
+
+        $('body').css('overflow-x', 'hidden');
+
+        $("#page").show("fast");
+
+        $("#page").resizable( "option", "disabled", true );
+
+        function showSendEmailForm()
+        {
+
+
+            $( "#dialog:ui-dialog" ).dialog( "destroy" );
+
+            $( "#dialog-modal" ).dialog({
+                height: 550,
+                width: 400,
+                titlebar: {
+                    background: '#CC9933'
+                },
+                modal: true
+            });
+
+            $("#dialog-modal").css("background-color","#FFCC66");
+
+            $("#dialog-modal").show("fast");
+
+
+        }
+        function showUploadForm()
+        {
+            $( "#dialog:ui-dialog" ).dialog( "destroy" );
+
+
+            $( "#dialog-file-upload" ).dialog({
+                height: 200,
+                width: 600,
+                titlebar: {
+                    background: '#CC9933'
+                },
+                modal: true
+            });
+
+            $("#dialog-file-upload").css("background-color","#FFCC66");
+
+            $("#dialog-file-upload").show("fast");
+
+
+        }
+        function showErrorMessage()
+        {
+            $( "#dialog:ui-dialog" ).dialog( "destroy" );
+
+
+            $( "#dialog-error" ).dialog({
+                resizable: false,
+                height: 160,
+                modal: true,
+                buttons: {
+                    ok : function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            $("#dialog-file-upload").css("background-color","#FFCC66");
+
+            $("#dialog-file-upload").show("fast");
+
+
+        }
+
+        // Add a Handler for the Contact Us Nav link
+        // that will open the file upload form
+
+        $( "#contactUs" ).click(function() {
+            showSendEmailForm();
+            return false;
+        });
+
+        $( "#index-contactUs" ).click(function() {
+            showSendEmailForm();
+            return false;
+        });
+
+        $( "#btm-contactUs" ).click(function() {
+            showSendEmailForm();
+            return false;
+        });
+
+        // Add a Handler for the File Upload Nav link
+        // that will open the file upload form
+
+        $( "#upload" ).click(function(){
+            showUploadForm();
+            return false;
+        });
+
+        $( "#btm-upload" ).click(function(){
+            showUploadForm();
+            return false;
+        });
+
+        // Add a Handler for the Blog Nav link
+        // that will open the error dialog
+
+        $( "#blog" ).click(function(){
+            showErrorMessage();
+            return false;
+        });
+
+        $( "#btm-blog" ).click(function(){
+            showErrorMessage();
+            return false;
+        });
+
+        // Add a Handler for the Share Nav link
+        // that will open the error dialog
+
+        $( "#share" ).click(function(){
+            showErrorMessage();
+            return false;
+        });
+
+        $( "#btm-share" ).click(function(){
+            showErrorMessage();
+            return false;
+        });
+
+        // Add a Handler to move the page dialog
+        // back the center should the browser
+        // window be resized.
+
+        $(window).resize(function() {
+            $("#page").position({
+                my: "center",
+                at: "center",
+                of: window,
+                using: using,
+                collision: "none none"});
+        });
+
+        // When a link is clicked remove focus
+        $('a').click(function() {
+            this.blur();
+        });
+
+    });
+</script>
+<script type='text/javascript'>
+    // <![CDATA[
+
+    var frmvalidator  = new Validator("contactus");
+    frmvalidator.EnableOnPageErrorDisplay();
+    frmvalidator.EnableMsgsTogether();
+    frmvalidator.addValidation("name","req","Please provide your name");
+
+    frmvalidator.addValidation("email","req","Please provide your email address");
+
+    frmvalidator.addValidation("email","email","Please provide a valid email address");
+
+    frmvalidator.addValidation("message","maxlen=2048","The message is too long!(more than 2KB!)");
+
+    frmvalidator.addValidation("photo","file_extn=jpg;jpeg;gif;png;bmp","Upload images only. Supported file types are: jpg,gif,png,bmp");
+
+    frmvalidator.addValidation("scaptcha","req","Please enter the code in the image above");
+
+    document.forms['contactus'].scaptcha.validator
+            = new FG_CaptchaValidator(document.forms['contactus'].scaptcha,
+            document.images['scaptcha_img']);
+
+    function SCaptcha_Validate()
+    {
+        return document.forms['contactus'].scaptcha.validator.validate();
+    }
+
+    frmvalidator.setAddnlValidationFunction("SCaptcha_Validate");
+
+    function refresh_captcha_img()
+    {
+        var img = document.images['scaptcha_img'];
+        img.src = img.src.substring(0,img.src.lastIndexOf("?")) + "?rand="+Math.random()*1000;
+    }
+
+    // ]]>
+</script>

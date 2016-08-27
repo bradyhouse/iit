@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProduceMarket", "ProduceMarket\ProduceMarket.csproj", "{458DA1A3-20D3-4D9C-9AC7-B928EE0E7611}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{38090A6C-10B4-43D3-ABE5-446DEAC60942}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{679F0B45-3A42-4251-8BDE-0B199E0C6FBB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{EA6ED31B-1E33-4B52-83F2-9DE00C2861E7}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\ProduceMarket.json = PublishScripts\Templates\ProduceMarket.json
+		PublishScripts\Templates\ProduceMarket.param.dev.json = PublishScripts\Templates\ProduceMarket.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://bradyhouse.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ProduceMarket\\ProduceMarket.csproj
+		SccProjectName1 = ProduceMarket
+		SccLocalPath1 = ProduceMarket
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{458DA1A3-20D3-4D9C-9AC7-B928EE0E7611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458DA1A3-20D3-4D9C-9AC7-B928EE0E7611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458DA1A3-20D3-4D9C-9AC7-B928EE0E7611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458DA1A3-20D3-4D9C-9AC7-B928EE0E7611}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{679F0B45-3A42-4251-8BDE-0B199E0C6FBB} = {38090A6C-10B4-43D3-ABE5-446DEAC60942}
+		{EA6ED31B-1E33-4B52-83F2-9DE00C2861E7} = {38090A6C-10B4-43D3-ABE5-446DEAC60942}
+	EndGlobalSection
+EndGlobal

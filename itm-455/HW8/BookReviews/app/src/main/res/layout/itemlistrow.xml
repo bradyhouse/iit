@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:padding="6dip"
+   >
+    <ImageView
+        android:id="@+id/icon"
+        android:contentDescription="@string/icon_alt_text"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/title"
+        android:src="@drawable/book_4" />
+    <TextView android:textColor="#000"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="title" />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textColor="#000"
+        android:id="@+id/author"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:text="author"
+        android:height="20sp" />
+    <RatingBar
+        android:id="@+id/rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_below="@+id/author"
+        android:layout_alignLeft="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dip"
+        android:paddingBottom="20dip"
+        android:stepSize="0.25"
+        android:numStars="5"
+        />
+</RelativeLayout>

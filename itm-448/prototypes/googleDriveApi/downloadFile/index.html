@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <script src="filepicker.js"></script>
+    <script src="aes.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        function downloadFile(file, callback) {
+            console.log('downloadFile');
+            if (file.downloadUrl) {
+                var accessToken = gapi.auth.getToken().access_token;
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', file.downloadUrl);
+                xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+                xhr.onload = function() {
+                    callback(xhr.responseText);
+                };
+                xhr.onerror = function() {
+                    callback(null);
+                };
+                xhr.send();
+            } else {
+                callback(null);
+            }
+        }
+        function initPicker() {
+            var picker = new FilePicker({
+                apiKey: 'AIzaSyBx53vTrzLO0h-z1XbErTELfP3E1Smbmis',
+                clientId: '204334724477-dc0h7bs73dqpaa9rkbb5s08ea0u2tk9n',
+                buttonEl: document.getElementById('pick'),
+                onSelect: function(file) {
+                    console.log('onSelect');
+                    console.log('file');
+                    console.log(file);
+                    downloadFile(file, function(blob) {
+                        console.log('downloadFile > callback');
+                        //console.log('blob');
+                        //console.log(blob);
+                        var password = 'house',
+                            a = $('a.download'),
+                            // Use the CryptoJS library and the AES cypher to encrypt the
+                            // contents of the file, held in e.target.result, with the password
+                            encrypted = CryptoJS.AES.encrypt(blob, password);
+                        console.log('encrypted');
+                        console.log(encrypted);
+                        console.log('a');
+                        console.log(a);
+                        // The download attribute will cause the contents of the href
+                        // attribute to be downloaded when clicked. The download attribute
+                        // also holds the name of the file that is offered for download.
+                        a.attr('href', 'data:application/octet-stream,' + encrypted);
+                        a.attr('download', file.originalFilename);
+                        a.attr('style', 'display: block');
+                    });
+                }
+            });
+        }
+    </script>
+    <script src="https://www.google.com/jsapi?key=AIzaSyBx53vTrzLO0h-z1XbErTELfP3E1Smbmis"></script>
+    <script src="https://apis.google.com/js/client.js?onload=initPicker"></script>
+</head>
+<body>
+<!--Add a file picker for the user to start the upload process -->
+<input type="file" id="filePicker" style="display: none" value="Files" />
+<!--<button type="button" id="encrypt">Encrypt</button>
+<button type="button" id="decrypt">Decrypt</button>-->
+<button type="button" id="pick">Pick File</button>
+<input type="password" id="passPhrase" style="display: none;" />
+<a class="download">Download</a>
+<input type="button" id="authorizeButton" style="display: none" value="Authorize" />
+</body>
+</html>

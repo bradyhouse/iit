@@ -1,0 +1,16 @@
+.background-black {
+    background-color: #000000 !important;
+}
+
+.background-white {
+    background-color: #ffffff !important;
+}
+
+.background-orange {
+    background-color: #EFA741 !important;
+}
+
+.background-blue {
+    background-image: none !important;
+    background-color: #32AED4 !important;
+}
